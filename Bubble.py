@@ -21,6 +21,8 @@ def bubble_sort_from_file(filename):
     print("정렬 소요 시간: {:.6f}초".format(end_time - start_time))
 
 if __name__ == "__main__":
-    filename = sys.argv[1]
-    if len(sys.argv) != 2:   filename = "data.txt"
+    if len(sys.argv) == 2:
+        filename = sys.argv[1]
+    else:
+        filename = "data.txt"
     bubble_sort_from_file(filename)
