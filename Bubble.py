@@ -22,4 +22,5 @@ def bubble_sort_from_file(filename):
 
 if __name__ == "__main__":
     filename = sys.argv[1]
+    if len(sys.argv) != 2:   filename = "data.txt"
     bubble_sort_from_file(filename)
