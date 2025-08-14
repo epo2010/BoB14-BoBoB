@@ -19,4 +19,4 @@ def bubble_sort_from_file(filename):
     print("정렬 후:", data)
     print("정렬 소요 시간: {:.6f}초".format(end_time - start_time))
 
-bubble_sort_from_file("datat.txt")
+bubble_sort_from_file("data.txt")
