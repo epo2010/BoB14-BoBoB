@@ -1,5 +1,5 @@
 # merge.py
-# 사용: python merge.py datat.txt   (인자 없으면 data.txt를 읽음)
+# 사용: python merge.py datat.txt (인자 없으면 data.txt를 읽음)
 import sys
 import re
 import time
