@@ -1,3 +1,5 @@
+import time
+
 def partition(arr: list, p: int, r: int):
     x = arr[p]
     i = p
@@ -20,6 +22,11 @@ if __name__ == "__main__":
         data = f.read().strip()
         arr = [int(x) for x in data.split(",") if x.strip()]
 
+    start_time = time.time()
+
     quickSort(arr, 0, len(arr) - 1)
 
+    end_time = time.time()
+
     print(arr)
+    print(f"정렬 시간: {end_time - start_time:.6f} 초")
